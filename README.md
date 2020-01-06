@@ -7,3 +7,8 @@ For browsers that don't support SVG (IE 8 and below, Android 2.3 and below), you
 ```
 <img src="equilateral.png" alt="triangle with equal sides" srcset="equilateral.svg">
 ```
+
+
+
+#Sources
+1. https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Adding_vector_graphics_to_the_Web
