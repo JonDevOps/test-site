@@ -39,7 +39,7 @@ But you can use two new attributes — `srcset` and `sizes` — to provide sever
 
 2.2) **Resolution switching: Same size, different resolutions**
  
- 
+ If you're supporting multiple display resolutions, but everyone sees your image at the same real-world size on the screen, you can allow the browser to choose an appropriate resolution image by using `srcset` with x-descriptors and without `sizes`:
  
 2.3) **Art direction**
 
