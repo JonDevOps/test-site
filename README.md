@@ -41,6 +41,13 @@ But you can use two new attributes — `srcset` and `sizes` — to provide sever
  
  If you're supporting multiple display resolutions, but everyone sees your image at the same real-world size on the screen, you can allow the browser to choose an appropriate resolution image by using `srcset` with x-descriptors and without `sizes`:
  
+ ```
+ <img srcset="elva-fairy-320w.jpg,
+             elva-fairy-480w.jpg 1.5x,
+             elva-fairy-640w.jpg 2x"
+     src="elva-fairy-640w.jpg" alt="Elva dressed as a fairy">
+ ```
+ 
 2.3) **Art direction**
 
 
