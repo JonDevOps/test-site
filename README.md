@@ -48,6 +48,15 @@ But you can use two new attributes — `srcset` and `sizes` — to provide sever
      src="elva-fairy-640w.jpg" alt="Elva dressed as a fairy">
  ```
  
+ For example, the following CSS is applied to the image so that it will have a width of 320 pixels on the screen:
+ ```
+ img {
+  width: 320px;
+}
+ ```
+In this case, `sizes` is not needed — the browser simply works out what resolution the display is that it is being shown on, and serves the most appropriate image referenced in the `srcset`. So if the device accessing the page has a standard/low resolution display, with one device pixel representing each CSS pixel, the `elva-fairy-320w.jpg` image will be loaded (the 1x is implied, so you don't need to include it.) If the device has a high resolution of two device pixels per CSS pixel or more, the `elva-fairy-640w.jpg` image will be loaded. 
+ 
+ 
 2.3) **Art direction**
 
 
