@@ -35,7 +35,7 @@ But you can use two new attributes — `srcset` and `sizes` — to provide sever
  1. A **media condition** ((max-width:600px)) — you'll learn more about these in the CSS topic, but for now let's just say that a media condition describes a possible state that the screen can be in. In this case, we are saying "when the viewport width is 600 pixels or less".
  2. A space
  3. The width of the slot the image will fill when the media condition is true (480px)
-
+    * Notice that the last slot width has no media condition (this is the default that is chosen when none of the media conditions are true). The browser ignores everything after the first matching condition, so be careful how you order the media conditions.
 
 2.2) **Resolution switching: Same size, different resolutions**
  
