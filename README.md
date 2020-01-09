@@ -22,6 +22,7 @@ For browsers that don't support SVG (IE 8 and below, Android 2.3 and below), you
 
 
 2.4) **Summary**
+
 As a recap, there are two distinct problems we've been discussing here:
 
 * **Art direction**: The problem whereby you want to serve cropped images for different layouts — for example a landscape image showing a full scene for a desktop layout, and a portrait image showing the main subject zoomed in for a mobile layout. You can solve this problem using the <picture> element.
