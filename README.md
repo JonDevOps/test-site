@@ -13,7 +13,9 @@ For browsers that don't support SVG (IE 8 and below, Android 2.3 and below), you
 * *Responsive image technologies* were implemented recently to solve the problems indicated above by letting you offer the browser several image files, either all showing the same thing but containing different numbers of pixels (*resolution switching*), or different images suitable for different space allocations (*art direction*).
  
 2.1) **Resolution switching: Different sizes**
-
+The `<img>` element only lets you point the browser to a single source file:
+`<img src="elva-fairy-800w.jpg" alt="Elva dressed as a fairy">
+`
 
 2.2) **Resolution switching: Same size, different resolutions**
  
