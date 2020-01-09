@@ -25,7 +25,10 @@ But you can use two new attributes — `srcset` and `sizes` — to provide sever
             800px"
      src="elva-fairy-800w.jpg" alt="Elva dressed as a fairy">
 ```
-
+`srcset` defines the set of images we will allow the browser to choose between, and what size each image is. Each set of image information is separated from the previous one by a comma. For each one, we write:
+ 1. An image filename (elva-fairy-480w.jpg)
+ 2. A space
+ 3. The image's intrinsic width in pixels (480w) — note that this uses the w unit, not px as you might expect. This is the image's real size, which can be found by inspecting the image file on your computer
 
 
 2.2) **Resolution switching: Same size, different resolutions**
