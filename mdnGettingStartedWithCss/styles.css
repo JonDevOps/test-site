@@ -1,0 +1,81 @@
+/* Target an HTML element.*/
+h1 {
+  color: red;
+}
+
+/* Target multiple HTML element selectors.*/
+p, li {
+  color: green;
+}
+
+/* Target a HTML element and use a CSS rule to change the way it looks.*/
+li {
+  list-style-type: square;
+}
+
+/* Target a class by creating a selector.*/
+.special {
+  color: orange;
+  font-weight: bold;
+}
+
+/* Target span and li elements that have a class of special.*/
+span.special,
+li.special{
+  color: orange;
+  font-weight: normal;
+}
+
+/* To select only an <em> that is nested inside an <li> element you can use a selector called the descendant combinator, which is simply a space between two selectors.*/
+li em {
+  color: rebeccapurple;
+}
+
+/* Style a paragraph when is comes directly after a heading at the same hierarchy level in the HTML.To do this place a + (an adjacent sibling combinator) between the selectors.*/
+h1 + p {
+  font-size: 200%;
+}
+
+/* Make a span red if it is inside a paragraph.*/
+p span {
+  color: red;
+}
+
+/* Now style somthing based on its state. Style a link. To do this target the <a> (anchor) element. This element has different states depending on whether it is unvisited, visited, being hovered over, in the process of being clicked, etc. You can use CSS ti target these different states.
+   Style unvisited links pink and visited links green.*/
+a:link (
+  color: red;
+  font-weight: bold;
+) 
+
+a:visited {
+  color: green;
+}
+
+/* Change the way a link looks when the user hovers over it.*/
+a:hover {
+  text-decoration: none;
+}
+
+a:visited {
+  color: green;
+}
+
+/* Change the way links look when a user hovers over it. Remove the underline.*/
+a:hover {
+  text-decoration: none;
+}
+
+
+/* Combine multiple slectors and combinators together.*/
+/* Selects any <span> that is inside a <p>, which is inside an article.*/
+article p span {...}
+
+/* Combine multiple types together.*/
+h1 + ul + p .special {
+  color: yellow;
+  background-color: black;
+  padding: 5px;
+
+}
+/*his will style any element with a class of special, which is inside a <p>, which comes just after an <h1>, which is inside a <body>*/
